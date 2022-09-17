@@ -42,13 +42,21 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li><span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
           <div class="row">
+            
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <ul class="humidwin">
+                <li class="humid">Humidity: <span id="humidity"></span><span id="hum">%</span></li>
+                <li class="win">Wind: <span id="wind"></span><span id="wi">m/h</span></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <div class="clearfix weather-temperature temper">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="d-flex">
                   <strong id="temperature"></strong
@@ -59,16 +67,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
     </div>
+
+    <div class="weather-forecast" id="forecast"></div>
+
     <div class="code">
       <small>
         <a
